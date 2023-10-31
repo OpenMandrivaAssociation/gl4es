@@ -33,3 +33,5 @@ Go check this lib if you need things like RemoteGL or TinyGLES (for software ren
 %make_install -C build
 
 %files
+%{_includedir}/gl4es/
+%{_prefix}/lib/gl4es/libGL.so.1
