@@ -11,6 +11,8 @@ Source:         https://github.com/ptitSeb/gl4es/archive/refs/heads/gl4es-master
 BuildRequires: cmake
 BuildRequires: coreutils
 BuildRequires: ccache
+BuildRequires: pkgconfig(x11)
+
 
 %description
 This is a library provide OpenGL 2.x functionality for GLES2.0 accelerated Hardware (and of course also support OpenGL 1.5 function, sometimes better than when using GLES 1.1 backend).
