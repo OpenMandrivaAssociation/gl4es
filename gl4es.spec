@@ -1,12 +1,12 @@
-%define git 20231009
+#define git 20231009
 
 Name:           gl4es
-Version:        1.1.4.%{git}
+Version:        1.1.6
 Release:        1
 Summary:        OpenGL for GLES Hardware
 License:        MIT
 URL:            https://github.com/ptitSeb/gl4es/
-Source:         https://github.com/ptitSeb/gl4es/archive/refs/heads/gl4es-master.tar.gz
+Source:         https://github.com/ptitSeb/gl4es/archive/refs/heads/%{version}/gl4es-%{version}.tar.gz
 
 BuildRequires: cmake
 BuildRequires: coreutils
@@ -23,7 +23,7 @@ This library is based on glshim (https://github.com/lunixbochs/glshim) but as no
 Go check this lib if you need things like RemoteGL or TinyGLES (for software rendering).
 
 %prep
-%autosetup -n gl4es-master -p1
+%autosetup -n gl4es-%{version} -p1
 
 %build
 %cmake
